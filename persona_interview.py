@@ -5,7 +5,7 @@ from langchain_openai import ChatOpenAI
 chat_history_key = "chat_history"
 if chat_history_key not in st.session_state:
     st.session_state[chat_history_key] = []
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 
 
 class Response(BaseModel):
